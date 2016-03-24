@@ -45,3 +45,6 @@ Usage example:
     -thresholds 0.5,0.5 
     -dontCheckSort -v`
 
+## Test data
+
+Find some test VCF files that are ready to JOIN in [data/public/vcf/](data/public/vcf/)
