@@ -31,7 +31,7 @@ Usage example:
     -oi <INDEL.out.vcf> 
     -dontCheckSort -dropAllFiltered -indelMergeWin 5`
 
-### RG calc
+### RG CALC
 
 To calculate the genome-wide concordance score signal, run:
 `java -jar bin/wtchg-rg-1.0.jar CalcreliabilitySignals calc`
