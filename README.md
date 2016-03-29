@@ -6,10 +6,10 @@ Ultimately, genomic regions of high/low concordance are calculated from this gen
 ## RG genomic partitions
 
 * A genomic partition calculated from 219 deep WGS alignments can be [downloaded here](data/public/20160329_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz). The partition contains 2,209,778 concordance intervals located on chromosomes 1,..,22,X,Y.
-..* Reference sequence: hs37d5 (GRCh37 + decoy)
-..* Read mapper: bwa + stampy
-..* Variant callers: GATK HaplotypeCaller, platypus, samtools
-..* Params: w<sup>c</sup> = 1; w<sup>d</sup> = -3; t<sub>c</sub>=t<sub>d</sub>=0.5; window size x=1000
+  * Reference sequence: hs37d5 (GRCh37 + decoy)
+  * Read mapper: bwa + stampy
+  * Variant callers: GATK HaplotypeCaller, platypus, samtools
+  * Params: w<sup>c</sup> = 1; w<sup>d</sup> = -3; t<sub>c</sub>=t<sub>d</sub>=0.5; window size x=1000
 
 
 
