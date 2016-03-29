@@ -1,4 +1,17 @@
-# Welcome to RG
+# Welcome to RG (ReliableGenome)
+
+ReliableGenome/RG is a method for partitioning genomes into high and low concordance regions with respect to a set of surveyed VC pipelines. RG integrates variant call sets created by multiple pipelines from arbitrary numbers of input datasets and interpolates expected concordance for genomic regions without data resulting in a genome-wide concordance score.
+Ultimately, genomic regions of high/low concordance are calculated from this genome-wide signal.	
+
+## RG genomic partitions
+
+* A genomic partition calculated from 219 deep WGS alignments can be [data/public/20160329_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz](downloaded here). The partition contains 2,209,778 concordance intervals located on chromosomes 1,..,22,X,Y.
+** Reference sequence: hs37d5 (GRCh37 + decoy)
+** Read mapper: bwa + stampy
+** Variant callers: GATK HaplotypeCaller, platypus, samtools
+** Params: w<sup>c</sup> = 1; w<sup>d</sup> = -3; t<sub>c</sub>=t<sub>d</sub>=0.5; window size x=1000
+
+
 
 ## prerequisites
 
