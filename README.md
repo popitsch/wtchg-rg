@@ -9,11 +9,13 @@ Read more about RG in [this poster](docs/2016_RG_poster.pdf) that was presented 
 
 ## RG genomic partitions
 
-* A genomic partition calculated from 219 deep WGS alignments can be [downloaded here](data/public/20160329_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz). The partition contains 2,209,778 concordance intervals located on chromosomes 1,..,22,X,Y.
+* A genomic partition calculated from 219 deep WGS alignments can be [downloaded here](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz)([.tbi](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz.tbi)). The partition contains 2,209,778 concordance intervals located on chromosomes 1,..,22,X,Y.
   * Reference sequence: hs37d5 (GRCh37 + decoy)
   * Read mapper: bwa + stampy
   * Variant callers: GATK HaplotypeCaller, platypus, samtools
   * Params: w<sup>c</sup> = 1; w<sup>d</sup> = -3; t<sub>c</sub>=t<sub>d</sub>=0.5; window size x=1000
+* The same partition with LCR and HD regions removed ([RG-LCR-HD](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz-min-LCR-min-HD.bed.gz)([.tbi](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz-min-LCR-min-HD.bed.gz.tbi))), see paper.
+* The same partition with LCR100 and HD regions removed ([RG-LCR100-HD](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz-min-LCR100-min-HD.bed.gz)([.tbi](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz-min-LCR100-min-HD.bed.gz.tbi))), see paper.
 
 ---
 
@@ -57,7 +59,7 @@ to get detailed usage information.
 Usage example:
 `java -Xmx12g -jar bin/wtchg-rg-1.0.jar calc 
     -o <OUTDIR> 
-    -w 1000 \
+    -w 1000 
     -scoringSchema 1,-3 
     -thresholds 0.5,0.5 
     -dontCheckSort -v`
@@ -66,4 +68,10 @@ Usage example:
 
 ## Test data
 
-Find some test VCF files that are ready to JOIN in [data/public/vcf/](data/public/vcf/)
+Find some test VCF files that are ready to JOIN in [data/public/vcf/](data/public/vcf/).
+Usage example (please modify paths to vcf/jar files as required): 
+`java -Xmx12g -jar wtchg-rg-1.0.jar calc -o results -w 1000 -scoringSchema 1,-3 -thresholds 0.5,0.5 -createWigs -dontCheckSort -v -d vcf/AW_CRS_1631.DP+MDI.vcf.gz -d vcf/AW_CRS_1632.DP+MDI.vcf.gz -d vcf/AW_CRS_1806.DP+MDI.vcf.gz -d vcf/AW_CRS_1807.DP+MDI.vcf.gz -d vcf/AW_CRS_4103.DP+MDI.vcf.gz -d vcf/AW_CRS_4917.DP+MDI.vcf.gz -d vcf/AW_SC_4654.DP+MDI.vcf.gz -d vcf/AW_SC_4655.DP+MDI.vcf.gz -d vcf/AW_SC_4659.DP+MDI.vcf.gz
+`
+Please note that the "-createWigs" switch results in the creation of [WIG files](https://genome.ucsc.edu/goldenpath/help/wiggle.html) containing the genome-wide (interpolated) score signal and a signal showing the number of contributing datasets per position ("power signal"). The produced WIG files are too large to load them into a genome browser directly and should be converted, e.g., to the [BigWig format](https://genome.ucsc.edu/goldenpath/help/bigWig.html) using the following commandline
+`wigToBigWig <WIG> <CHRSIZES> <BIGWIG>`.
+(a chromosome sizes file [is provided here](data/public/hs37d5.fa) for convenience).
