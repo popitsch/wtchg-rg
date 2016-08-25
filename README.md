@@ -16,6 +16,7 @@ Read more about RG in [this poster](docs/2016_RG_poster.pdf) that was presented 
   * Params: w<sup>c</sup> = 1; w<sup>d</sup> = -3; t<sub>c</sub>=t<sub>d</sub>=0.5; window size x=1000
 * The same partition with LCR and HD regions removed ([RG-LCR-HD](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz-min-LCR-min-HD.bed.gz)([.tbi](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz-min-LCR-min-HD.bed.gz.tbi))), see paper.
 * The same partition with LCR100 and HD regions removed ([RG-LCR100-HD](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz-min-LCR100-min-HD.bed.gz)([.tbi](data/public/20160422_RG-win1000-score1_-3-RELIABLE-above0.5.bed.gz-min-LCR100-min-HD.bed.gz.tbi))), see paper.
+* The **same partition with UM75 regions removed** ([RG-UM75](data/public/20160825_RG-win1000-score1_-3-RELIABLE-above0.5.-min-UM75.bed.gz)([.tbi](data/public/20160825_RG-win1000-score1_-3-RELIABLE-above0.5.-min-UM75.bed.gz.tbi))), see paper.
 
 ---
 
