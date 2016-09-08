@@ -84,7 +84,8 @@ Please note that the "-createWigs" switch results in the creation of [WIG files]
 
 ## Citing RG
 Please cite our paper when using RG: 
-`Niko Popitsch, WGS500 Consortium, Anna Schuh, and Jenny C. Taylor
+
+`Niko Popitsch, WGS500 Consortium, Anna Schuh, and Jenny C. Taylor.
 ReliableGenome : Annotation of Genomic Regions with High/Low Variant Calling Concordance
 Bioinformatics, 2016 doi:10.1093/bioinformatics/btw587`
 
