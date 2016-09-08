@@ -5,7 +5,9 @@ Ultimately, genomic regions of high/low concordance are calculated from this gen
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
-Read more about RG in [this poster](docs/2016_RG_poster.pdf) that was presented at the [NGS16](https://www.iscb.org/ngs2016) conference.
+Read more about RG in 
+[this paper](http://bioinformatics.oxfordjournals.org/content/early/2016/09/06/bioinformatics.btw587) or have a look at
+[this poster](docs/2016_RG_poster.pdf) that was presented at the [NGS16](https://www.iscb.org/ngs2016) conference.
 
 ## RG genomic partitions
 
@@ -76,3 +78,13 @@ Usage example (please modify paths to vcf/jar files as required):
 Please note that the "-createWigs" switch results in the creation of [WIG files](https://genome.ucsc.edu/goldenpath/help/wiggle.html) containing the genome-wide (interpolated) score signal and a signal showing the number of contributing datasets per position ("power signal"). The produced WIG files are too large to load them into a genome browser directly and should be converted, e.g., to the [BigWig format](https://genome.ucsc.edu/goldenpath/help/bigWig.html) using the following commandline
 `wigToBigWig <WIG> <CHRSIZES> <BIGWIG>`.
 (a chromosome sizes file [is provided here](data/public/hs37d5.fa) for convenience).
+
+
+---
+
+## Citing RG
+Please cite our paper when using RG: 
+`Niko Popitsch, WGS500 Consortium, Anna Schuh, and Jenny C. Taylor
+ReliableGenome : Annotation of Genomic Regions with High/Low Variant Calling Concordance
+Bioinformatics, 2016 doi:10.1093/bioinformatics/btw587`
+
