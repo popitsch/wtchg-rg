@@ -91,23 +91,4 @@ Bioinformatics, 2016 doi:10.1093/bioinformatics/btw587`
 
 ## Contact
 
-If you want to get in touch, please write to 
-<script type="text/javascript">
-
-//<![CDATA[
-<!--
-var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
-"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
-" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!65{)rt{y+xx=l;=+;" +
-"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
-"\"(6),5\\\"\\\\WSL]]F03\\\\0N\\\\\\\\\\\\\\\\\\\\-,.8>?x8?$ =pm\\\\r;\\\\`:" +
-"-.2ef&*+3 6jh UPRT31\\\\0f\\\\04\\\\0]\\\\B[\\\\\\\\\\\\\\\\3@02\\\\\\\\20\\"+
-"\\0m\\\\}w23\\\\0Y\\\\NOK@U]33\\\\0I\\\\0U77\\\\1{\\\\n6<{b|}iiHkoGn24\\\\0" +
-"r\\\\\\\\\\\\33\\\\04\\\\03\\\\\\\\22\\\\04\\\\03\\\\\\\\1M7V01\\\\\\\\02\\" +
-"\\07\\\\02\\\\\\\\13\\\\0A\\\\a>qy99%6?&g<+3,&^J]T\\\"\\\\f(;} ornture;}))+" +
-"+(y)^(iAtdeCoarchx.e(odrChamCro.fngriSt+=;o27=1y%+;y+6)<5(iif){++;i<l;i=0(i" +
-"or;fthnglex.l=\\\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"             ;
-while(x=eval(x));
-//-->
-//]]>
-</script>.
+If you want to get in touch, please write to <a href="mailto:&#110;&#105;&#107;&#111;&#064;&#119;&#101;&#108;&#108;&#046;&#111;&#120;&#046;&#097;&#099;&#046;&#117;&#107;">&#110;&#105;&#107;&#111;&#064;&#119;&#101;&#108;&#108;&#046;&#111;&#120;&#046;&#097;&#099;&#046;&#117;&#107;</a>.
